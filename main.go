@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/koding/kite"
-	"lakawei/lakawei_scaffold/kite/kite_common"
+	"github.com/nclgh/lakawei_scaffold/kite/kite_common"
 )
 
 func main() {
@@ -18,5 +18,8 @@ func main() {
 func SetFuncRouter(k *kite.Kite) {
 	k.HandleFunc("CreateSession", func(r *kite.Request) (interface{}, error) {
 		return CreateSession(r)
+	}).DisableAuthentication()
+	k.HandleFunc("GetSession", func(r *kite.Request) (interface{}, error) {
+		return GetSession(r)
 	}).DisableAuthentication()
 }

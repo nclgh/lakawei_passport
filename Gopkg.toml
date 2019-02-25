@@ -29,6 +29,14 @@
   branch = "master"
   name = "github.com/koding/kite"
 
+[[constraint]]
+  branch = "master"
+  name = "github.com/nclgh/lakawei_scaffold"
+
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "1.3.0"
+
 [prune]
   go-tests = true
   unused-packages = true
