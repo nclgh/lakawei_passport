@@ -25,6 +25,10 @@ func GetSession(req *passport.GetSessionRequest) (*passport.GetSessionResponse, 
 		return passport.GetGetSessionResponse(kite_common.CodeFailed, ""), nil
 	}
 	rsp := passport.GetGetSessionResponse(kite_common.CodeSuccess, "")
-	rsp.UserId = s.UserId
-	return rsp,nil
+	if s != nil {
+		rsp.UserId = s.UserId
+	} else {
+		rsp.UserId = 0
+	}
+	return rsp, nil
 }

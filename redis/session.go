@@ -37,6 +37,9 @@ func GetSession(sid string) (*types.Session, error) {
 	if err != nil {
 		return nil, err
 	}
+	if ret == nil {
+		return nil, nil
+	}
 	s := &types.Session{}
 	err = json.Unmarshal(ret.([]byte), s)
 	if err != nil {
