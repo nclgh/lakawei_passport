@@ -3,8 +3,8 @@ package handler
 import (
 	"github.com/sirupsen/logrus"
 	"github.com/nclgh/lakawei_passport/redis"
-	"github.com/nclgh/lakawei_scaffold/rpc/passport"
 	"github.com/nclgh/lakawei_scaffold/rpc/common"
+	"github.com/nclgh/lakawei_scaffold/rpc/passport"
 )
 
 func CreateSession(req *passport.CreateSessionRequest) (*passport.CreateSessionResponse, error) {

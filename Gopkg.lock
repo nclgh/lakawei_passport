@@ -10,22 +10,6 @@
   version = "v0.3.1"
 
 [[projects]]
-  digest = "1:4ba637038f22c9065994c0cd734118fc75e0c744f855fd3edbd3b923d1f41d44"
-  name = "github.com/cenkalti/backoff"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "61153c768f31ee5f130071d08fc82b85208528de"
-  version = "v1.1.0"
-
-[[projects]]
-  digest = "1:76dc72490af7174349349838f2fe118996381b31ea83243812a97e5a0fd5ed55"
-  name = "github.com/dgrijalva/jwt-go"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e"
-  version = "v3.2.0"
-
-[[projects]]
   digest = "1:33082c63746b464db3d1c2c07a1396d860484d97fe857ef9e8668a9b406db09f"
   name = "github.com/go-redis/redis"
   packages = [
@@ -42,29 +26,6 @@
   version = "v6.15.2"
 
 [[projects]]
-  digest = "1:ca59b1175189b3f0e9f1793d2c350114be36eaabbe5b9f554b35edee1de50aea"
-  name = "github.com/gorilla/mux"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "a7962380ca08b5a188038c69871b8d3fbdf31e89"
-  version = "v1.7.0"
-
-[[projects]]
-  digest = "1:7b5c6e2eeaa9ae5907c391a91c132abfd5c9e8a784a341b5625e750c67e6825d"
-  name = "github.com/gorilla/websocket"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
-  version = "v1.4.0"
-
-[[projects]]
-  digest = "1:949b62c7296e86311e6090620e2c4891d3073eb9b5e25493eaf73d5b38310c1b"
-  name = "github.com/igm/sockjs-go"
-  packages = ["sockjs"]
-  pruneopts = "UT"
-  revision = "c8a8c6429d10e3b6865960ad8cb43779b8a834ef"
-
-[[projects]]
   digest = "1:0f65b10afa740ebce239838198b7647ca95c6395738bbaec5748aceece17b07c"
   name = "github.com/jinzhu/configor"
   packages = ["."]
@@ -73,53 +34,12 @@
   version = "v1.0.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:190ff84d9b2ed6589088f178cba8edb4b8ecb334df4572421fb016be1ac20463"
-  name = "github.com/juju/ratelimit"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "59fac5042749a5afb9af70e813da1dd5474f0167"
-
-[[projects]]
-  branch = "master"
-  digest = "1:fb893340d734effc171a6be936e9b925e9e5e5a18390e9fb78527c55e0b9a854"
-  name = "github.com/koding/cache"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "e8a81b0b3f20f895153311abde1062894b5912d6"
-
-[[projects]]
-  branch = "master"
-  digest = "1:6913cad8ac45aab1486efe0ef756ad2f5c63d1c2f92ea44d69cb80315aa310f9"
-  name = "github.com/koding/kite"
-  packages = [
-    ".",
-    "config",
-    "dnode",
-    "kitekey",
-    "protocol",
-    "sockjsclient",
-    "systeminfo",
-    "utils",
-  ]
-  pruneopts = "UT"
-  revision = "baa1a54919e3035417f7571dd46005e91afe8abe"
-
-[[projects]]
-  branch = "master"
-  digest = "1:b17624f435331c5345ab5d2907bba722ba45adbe13d80a30373688844393f5e1"
-  name = "github.com/koding/logging"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "8b5a689ed69b1c7cd1e3595276fc2a352d7818e0"
-
-[[projects]]
-  digest = "1:0a69a1c0db3591fcefb47f115b224592c8dfa4368b7ba9fae509d5e16cdc95c8"
+  digest = "1:31e761d97c76151dde79e9d28964a812c46efc5baee4085b86f68f0c654450de"
   name = "github.com/konsorten/go-windows-terminal-sequences"
   packages = ["."]
   pruneopts = "UT"
-  revision = "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242"
-  version = "v1.0.1"
+  revision = "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e"
+  version = "v1.0.2"
 
 [[projects]]
   branch = "master"
@@ -135,15 +55,15 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1fdc6634c84d91cc23f2fa8adf8c38f37787a6da53db2cffc0a5781e925594d7"
+  digest = "1:cf111f6cb6ca6a0bc04832df7e829ce80368831851a29ed9cd295a51c7e0546f"
   name = "github.com/nclgh/lakawei_rpc"
   packages = ["server"]
   pruneopts = "UT"
-  revision = "29114eb1d943e80d788dd8b56886e25688479e7d"
+  revision = "2ed2d979c42f7ebd77d562205c2ccc7a0a5e18db"
 
 [[projects]]
   branch = "master"
-  digest = "1:7f82fac14981f230dd59acdb22fac3f9f3b5f1a786254d3a7e63b959b5b1ed3a"
+  digest = "1:cff62b3dcaced3b8c5c93d5d3bb6ae4d1a57b91312286c644597907617e454ef"
   name = "github.com/nclgh/lakawei_scaffold"
   packages = [
     "redis_cli",
@@ -151,7 +71,7 @@
     "rpc/passport",
   ]
   pruneopts = "UT"
-  revision = "7a2b011e79258af21e8b8b65c14a1a2b4dd25d44"
+  revision = "23d07267c5360c8fcf9c7936a94ebcb5ef0a28dd"
 
 [[projects]]
   digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
@@ -162,61 +82,39 @@
   version = "v0.8.1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:a3b8912deeef29007fab9a13a9f21b9e9b59c621a2ed61e2fe7b37320a71fbd5"
+  digest = "1:274f67cb6fed9588ea2521ecdac05a6d62a8c51c074c1fccc6a49a40ba80e925"
   name = "github.com/satori/go.uuid"
   packages = ["."]
   pruneopts = "UT"
-  revision = "b2ce2384e17bbe0c6d34077efa39dbab3e09123b"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
-  digest = "1:87c2e02fb01c27060ccc5ba7c5a407cc91147726f8f40b70cceeedbc52b1f3a8"
+  digest = "1:e4c72127d910a96daf869a44f3dd563b86dbe6931a172863a0e99c5ff04b59e4"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   pruneopts = "UT"
-  revision = "e1e72e9de974bd926e5c56f83753fba2df402ce5"
-  version = "v1.3.0"
+  revision = "dae0fa8d5b0c810a8ab733fbd5510c7cae84eca4"
+  version = "v1.4.0"
 
 [[projects]]
   branch = "master"
-  digest = "1:fde12c4da6237363bf36b81b59aa36a43d28061167ec4acb0d41fc49464e28b9"
+  digest = "1:058e9504b9a79bfe86092974d05bb3298d2aa0c312d266d43148de289a5065d9"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "UT"
-  revision = "7f87c0fbb88b590338857bcb720678c2583d4dea"
+  revision = "a1f597ede03a7bef967a422b5b3a5bd08805a01e"
 
 [[projects]]
   branch = "master"
-  digest = "1:76ee51c3f468493aff39dbacc401e8831fbb765104cbf613b89bef01cf4bad70"
-  name = "golang.org/x/net"
-  packages = ["context"]
-  pruneopts = "UT"
-  revision = "3a22650c66bd7f4fb6d1e8072ffd7b75c8a27898"
-
-[[projects]]
-  branch = "master"
-  digest = "1:80200f57d482f61334a482a046ddedbad77c04dbec6ab81a4e1b3c6adbdfadef"
+  digest = "1:1aa109187d52894bd8929a34a0a483ea4e57d7e32e86d81c64cea84c1978d68e"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "UT"
-  revision = "cc5685c2db1239775905f3911f0067c0fa74762f"
-
-[[projects]]
-  branch = "v2"
-  digest = "1:988de7520a09024d5d94cd99bd545afbf194893994ec759b1cda0a0bbb6adb80"
-  name = "gopkg.in/mgo.v2"
-  packages = [
-    ".",
-    "bson",
-    "internal/json",
-    "internal/sasl",
-    "internal/scram",
-  ]
-  pruneopts = "UT"
-  revision = "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+  revision = "6c81ef8f67ca3f42fc9cd71dfbd5f35b0c4b5771"
 
 [[projects]]
   digest = "1:4d2e5a73dc1500038e504a8d78b986630e3626dc027bc030ba5c75da257cdb96"
