@@ -2,13 +2,14 @@ package redis
 
 import (
 	"fmt"
+	"time"
 	"encoding/json"
 	"github.com/satori/go.uuid"
 	"github.com/nclgh/lakawei_passport/types"
 	"github.com/nclgh/lakawei_scaffold/redis_cli"
 )
 
-const SessionExpireTime = 2 * 3600
+const SessionExpireTime = 2 * time.Hour
 
 var passportRedisClient = redis_cli.GetRedisClient("passport")
 
@@ -25,7 +26,8 @@ func CreateSession(userId int64) (string, error) {
 	}
 	bV, _ := json.Marshal(s)
 	val := string(bV)
-	_, err := passportRedisClient.Do("set", sId, val, "ex", SessionExpireTime)
+	//_, err := passportRedisClient.Do("set", sId, val, "ex", SessionExpireTime)
+	err := passportRedisClient.Set(sId, val, SessionExpireTime).Err()
 	if err != nil {
 		return "", fmt.Errorf("set redis failed. key: %v, err: %v", sId, err)
 	}
@@ -33,15 +35,13 @@ func CreateSession(userId int64) (string, error) {
 }
 
 func GetSession(sid string) (*types.Session, error) {
-	ret, err := passportRedisClient.Do("get", sid)
+	ret, err := passportRedisClient.Get(sid).Result()
+	//ret, err := passportRedisClient.Do("get", sid)
 	if err != nil {
 		return nil, err
 	}
-	if ret == nil {
-		return nil, nil
-	}
 	s := &types.Session{}
-	err = json.Unmarshal(ret.([]byte), s)
+	err = json.Unmarshal([]byte(ret), s)
 	if err != nil {
 		return nil, fmt.Errorf("umarshal session err. ret: %v", ret)
 	}

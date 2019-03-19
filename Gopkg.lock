@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:9f3b30d9f8e0d7040f729b82dcbc8f0dead820a133b3147ce355fc451f32d761"
+  name = "github.com/BurntSushi/toml"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3012a1dbe2e4bd1391d42b32f0577cb7bbc7f005"
+  version = "v0.3.1"
+
+[[projects]]
   digest = "1:4ba637038f22c9065994c0cd734118fc75e0c744f855fd3edbd3b923d1f41d44"
   name = "github.com/cenkalti/backoff"
   packages = ["."]
@@ -16,6 +24,22 @@
   pruneopts = "UT"
   revision = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e"
   version = "v3.2.0"
+
+[[projects]]
+  digest = "1:33082c63746b464db3d1c2c07a1396d860484d97fe857ef9e8668a9b406db09f"
+  name = "github.com/go-redis/redis"
+  packages = [
+    ".",
+    "internal",
+    "internal/consistenthash",
+    "internal/hashtag",
+    "internal/pool",
+    "internal/proto",
+    "internal/util",
+  ]
+  pruneopts = "UT"
+  revision = "d22fde8721cc915a55aeb6b00944a76a92bfeb6e"
+  version = "v6.15.2"
 
 [[projects]]
   digest = "1:ca59b1175189b3f0e9f1793d2c350114be36eaabbe5b9f554b35edee1de50aea"
@@ -39,6 +63,14 @@
   packages = ["sockjs"]
   pruneopts = "UT"
   revision = "c8a8c6429d10e3b6865960ad8cb43779b8a834ef"
+
+[[projects]]
+  digest = "1:0f65b10afa740ebce239838198b7647ca95c6395738bbaec5748aceece17b07c"
+  name = "github.com/jinzhu/configor"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "4edaf76fe18865e36de734d887f4c01bd05707af"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -91,14 +123,35 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:2e184a114912c721955e18648ba524e010f4e784651d101a6662ca9e04f24b7b"
-  name = "github.com/nclgh/lakawei_scaffold"
+  digest = "1:1aa12b6ace2af2c33b2f49a468d5a4868f99efca8b09724eba1a598fbd9e31d0"
+  name = "github.com/nclgh/lakawei_discover"
   packages = [
-    "kite/kite_common",
-    "kite/passport",
+    ".",
+    "config",
+    "helper",
   ]
   pruneopts = "UT"
-  revision = "41bc88b81ca7a22df1b470f0b725d9b6268798a9"
+  revision = "d41ff0fa4025665503a9f632a06ee4ce04f3fd9c"
+
+[[projects]]
+  branch = "master"
+  digest = "1:1fdc6634c84d91cc23f2fa8adf8c38f37787a6da53db2cffc0a5781e925594d7"
+  name = "github.com/nclgh/lakawei_rpc"
+  packages = ["server"]
+  pruneopts = "UT"
+  revision = "29114eb1d943e80d788dd8b56886e25688479e7d"
+
+[[projects]]
+  branch = "master"
+  digest = "1:7f82fac14981f230dd59acdb22fac3f9f3b5f1a786254d3a7e63b959b5b1ed3a"
+  name = "github.com/nclgh/lakawei_scaffold"
+  packages = [
+    "redis_cli",
+    "rpc/common",
+    "rpc/passport",
+  ]
+  pruneopts = "UT"
+  revision = "7a2b011e79258af21e8b8b65c14a1a2b4dd25d44"
 
 [[projects]]
   digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
@@ -165,13 +218,23 @@
   pruneopts = "UT"
   revision = "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
 
+[[projects]]
+  digest = "1:4d2e5a73dc1500038e504a8d78b986630e3626dc027bc030ba5c75da257cdb96"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "51d6538a90f86fe93ac480b35f37b2be17fef232"
+  version = "v2.2.2"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/koding/kite",
-    "github.com/nclgh/lakawei_scaffold/kite/kite_common",
-    "github.com/nclgh/lakawei_scaffold/kite/passport",
+    "github.com/nclgh/lakawei_rpc/server",
+    "github.com/nclgh/lakawei_scaffold/redis_cli",
+    "github.com/nclgh/lakawei_scaffold/rpc/common",
+    "github.com/nclgh/lakawei_scaffold/rpc/passport",
+    "github.com/satori/go.uuid",
     "github.com/sirupsen/logrus",
   ]
   solver-name = "gps-cdcl"
