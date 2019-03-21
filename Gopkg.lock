@@ -55,11 +55,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:cf111f6cb6ca6a0bc04832df7e829ce80368831851a29ed9cd295a51c7e0546f"
+  digest = "1:c291a0c4a61b5aa562cb05a773dfc4caee84702b3ca17da5c8789cf021d453cc"
   name = "github.com/nclgh/lakawei_rpc"
   packages = ["server"]
   pruneopts = "UT"
-  revision = "2ed2d979c42f7ebd77d562205c2ccc7a0a5e18db"
+  revision = "962d28a1c57dd45e278ad821674cdef95f07aaae"
 
 [[projects]]
   branch = "master"

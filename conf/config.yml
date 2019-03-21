@@ -1,4 +1,3 @@
 ServiceName: "ServicePassport"
 ServiceAddr: "127.0.0.1"
 ServicePort: "9701"
-ServiceMountIp: "127.0.0.1"
