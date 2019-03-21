@@ -43,7 +43,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1aa12b6ace2af2c33b2f49a468d5a4868f99efca8b09724eba1a598fbd9e31d0"
+  digest = "1:55b0f2a9877d106bb5c913e776e4e7a25121e859e0636ab4c443ffb47736ca3e"
   name = "github.com/nclgh/lakawei_discover"
   packages = [
     ".",
@@ -51,7 +51,7 @@
     "helper",
   ]
   pruneopts = "UT"
-  revision = "d41ff0fa4025665503a9f632a06ee4ce04f3fd9c"
+  revision = "61f7d28c1cc8a600a3388c038f065aefec4ae0ea"
 
 [[projects]]
   branch = "master"
