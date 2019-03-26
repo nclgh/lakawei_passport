@@ -3,13 +3,13 @@ package handler
 import (
 	"github.com/sirupsen/logrus"
 	"github.com/nclgh/lakawei_passport/redis"
-	"github.com/nclgh/lakawei_passport/helper"
+	"github.com/nclgh/lakawei_scaffold/utils"
 	"github.com/nclgh/lakawei_scaffold/rpc/common"
 	"github.com/nclgh/lakawei_scaffold/rpc/passport"
 )
 
 func CreateSession(req *passport.CreateSessionRequest) (rsp *passport.CreateSessionResponse) {
-	defer helper.RecoverPanic(func(err interface{}, stacks string) {
+	defer utils.RecoverPanic(func(err interface{}, stacks string) {
 		logrus.Errorf("CreateSession panic: %v, stack: %v", err, stacks)
 		rsp = getCreateSessionResponse(common.CodeFailed, "panic")
 	})
@@ -33,7 +33,7 @@ func getCreateSessionResponse(code common.RspCode, msg string) *passport.CreateS
 }
 
 func GetSession(req *passport.GetSessionRequest) (rsp *passport.GetSessionResponse) {
-	defer helper.RecoverPanic(func(err interface{}, stacks string) {
+	defer utils.RecoverPanic(func(err interface{}, stacks string) {
 		logrus.Errorf("GetSession panic: %v, stack: %v", err, stacks)
 		rsp = getGetSessionResponse(common.CodeFailed, "panic")
 	})
@@ -61,7 +61,7 @@ func getGetSessionResponse(code common.RspCode, msg string) *passport.GetSession
 }
 
 func DeleteSession(req *passport.DeleteSessionRequest) (rsp *passport.DeleteSessionResponse) {
-	defer helper.RecoverPanic(func(err interface{}, stacks string) {
+	defer utils.RecoverPanic(func(err interface{}, stacks string) {
 		logrus.Errorf("DeleteSession panic: %v, stack: %v", err, stacks)
 		rsp = getDeleteSessionResponse(common.CodeFailed, "panic")
 	})

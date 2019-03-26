@@ -1,8 +1,8 @@
-package helper
+package utils
 
 import (
-	"runtime"
 	"fmt"
+	"runtime"
 	"strings"
 )
 

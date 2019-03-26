@@ -63,16 +63,17 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:aa62506d0bf1e6530db405916169d9048ec2ccf0e7b81d6f99fd4baa922b1dec"
+  digest = "1:2b4c95834e3111084902ebf85fc800879e6f8dcfd22db18158131518ac5e1ea9"
   name = "github.com/nclgh/lakawei_scaffold"
   packages = [
     "conf",
     "redis_cli",
     "rpc/common",
     "rpc/passport",
+    "utils",
   ]
   pruneopts = "UT"
-  revision = "ea66cc3e50b3095aaf6ca243d1d52391f0f657f5"
+  revision = "9a8ab884bd4715ab422461a938dec2d64e9eb8f5"
 
 [[projects]]
   digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
@@ -134,6 +135,7 @@
     "github.com/nclgh/lakawei_scaffold/redis_cli",
     "github.com/nclgh/lakawei_scaffold/rpc/common",
     "github.com/nclgh/lakawei_scaffold/rpc/passport",
+    "github.com/nclgh/lakawei_scaffold/utils",
     "github.com/satori/go.uuid",
     "github.com/sirupsen/logrus",
   ]
