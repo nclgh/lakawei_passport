@@ -9,13 +9,19 @@ type ServicePassport struct {
 }
 
 func (server *ServicePassport) CreateSession(req passport.CreateSessionRequest, res *passport.CreateSessionResponse) error {
-	resp, _ := handler.CreateSession(&req)
+	resp := handler.CreateSession(&req)
 	*res = *resp
 	return nil
 }
 
 func (server *ServicePassport) GetSession(req passport.GetSessionRequest, res *passport.GetSessionResponse) error {
-	resp, _ := handler.GetSession(&req)
+	resp := handler.GetSession(&req)
+	*res = *resp
+	return nil
+}
+
+func (server *ServicePassport) DeleteSession(req passport.DeleteSessionRequest, res *passport.DeleteSessionResponse) error {
+	resp := handler.DeleteSession(&req)
 	*res = *resp
 	return nil
 }

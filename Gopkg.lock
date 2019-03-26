@@ -63,15 +63,16 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:cff62b3dcaced3b8c5c93d5d3bb6ae4d1a57b91312286c644597907617e454ef"
+  digest = "1:aa62506d0bf1e6530db405916169d9048ec2ccf0e7b81d6f99fd4baa922b1dec"
   name = "github.com/nclgh/lakawei_scaffold"
   packages = [
+    "conf",
     "redis_cli",
     "rpc/common",
     "rpc/passport",
   ]
   pruneopts = "UT"
-  revision = "23d07267c5360c8fcf9c7936a94ebcb5ef0a28dd"
+  revision = "ea66cc3e50b3095aaf6ca243d1d52391f0f657f5"
 
 [[projects]]
   digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
@@ -128,6 +129,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/go-redis/redis",
     "github.com/nclgh/lakawei_rpc/server",
     "github.com/nclgh/lakawei_scaffold/redis_cli",
     "github.com/nclgh/lakawei_scaffold/rpc/common",
