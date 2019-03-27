@@ -2,6 +2,7 @@ package handler
 
 import (
 	"github.com/sirupsen/logrus"
+	goredis "github.com/go-redis/redis"
 	"github.com/nclgh/lakawei_passport/redis"
 	"github.com/nclgh/lakawei_scaffold/utils"
 	"github.com/nclgh/lakawei_scaffold/rpc/common"
@@ -38,7 +39,7 @@ func GetSession(req *passport.GetSessionRequest) (rsp *passport.GetSessionRespon
 		rsp = getGetSessionResponse(common.CodeFailed, "panic")
 	})
 	s, err := redis.GetSession(req.SessionId)
-	if err != nil {
+	if err != nil && err != goredis.Nil {
 		logrus.Errorf("get session err: %v", err)
 		return getGetSessionResponse(common.CodeFailed, "")
 	}
